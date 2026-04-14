@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "appVersion": "1.0.0",
+    "lastUpdatedAt": "2026-04-14T09:00:00+09:00",
+    "updatedBy": "Admin"
+  },
+  "settings": {
+    "displayOrder": ["event", "shipment", "memo"],
+    "defaultView": "calendar",
+    "weekStartsOn": 0
+  },
+  "units": [
+    {
+      "id": "unit_kg",
+      "name": "kg",
+      "isActive": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "unit_case",
+      "name": "ケース",
+      "isActive": true,
+      "sortOrder": 2
+    }
+  ],
+  "standards": [
+    {
+      "id": "std_40cm",
+      "name": "40cm",
+      "isActive": true,
+      "sortOrder": 1
+    }
+  ],
+  "destinations": [
+    {
+      "id": "dest_001",
+      "name": "奈良中央市場",
+      "address": "奈良県奈良市",
+      "phone": "0742-000-0000",
+      "contactPerson": "山田太郎",
+      "email": "sample@example.com",
+      "notes": "朝納品優先",
+      "isFavorite": true,
+      "isActive": true,
+      "sortOrder": 1
+    }
+  ],
+  "regularShipments": [
+    {
+      "id": "reg_001",
+      "destinationId": "dest_001",
+      "frequency": "weekly",
+      "intervalWeeks": 1,
+      "weekday": 2,
+      "standardId": "std_40cm",
+      "standardNameFallback": "40cm",
+      "quantity": 12,
+      "unitId": "unit_kg",
+      "unitNameFallback": "kg",
+      "startDate": "2026-04-01",
+      "endDate": "2026-12-31",
+      "notes": "午前着",
+      "isActive": true,
+      "updatedAt": "2026-04-14T09:00:00+09:00",
+      "updatedBy": "Admin"
+    }
+  ],
+  "spotShipments": [
+    {
+      "id": "spot_001",
+      "shipDate": "2026-04-18",
+      "destinationId": "dest_001",
+      "standardId": "std_40cm",
+      "standardNameFallback": "40cm",
+      "quantity": 8,
+      "unitId": "unit_kg",
+      "unitNameFallback": "kg",
+      "notes": "追加便",
+      "attachmentId": "",
+      "status": "confirmed",
+      "updatedAt": "2026-04-14T09:00:00+09:00",
+      "updatedBy": "Admin"
+    }
+  ],
+  "events": [
+    {
+      "id": "evt_001",
+      "date": "2026-04-18",
+      "time": "14:00",
+      "title": "来客対応",
+      "notes": "応接室",
+      "category": "general",
+      "updatedAt": "2026-04-14T09:00:00+09:00",
+      "updatedBy": "Admin"
+    }
+  ],
+  "memos": [
+    {
+      "id": "memo_001",
+      "date": "2026-04-18",
+      "text": "袋資材の在庫確認",
+      "priority": 1,
+      "updatedAt": "2026-04-14T09:00:00+09:00",
+      "updatedBy": "Admin"
+    }
+  ],
+  "attachments": []
+}

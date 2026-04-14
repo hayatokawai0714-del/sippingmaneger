@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  background:
+    radial-gradient(circle at 10% -10%, #d5f0de 0, transparent 45%),
+    radial-gradient(circle at 90% 0%, #e6f8ec 0, transparent 35%),
+    #f3fbf6;
+  color: #153629;
+}
+
+@layer components {
+  .app-card {
+    @apply rounded-xl border border-line bg-white/90 shadow-sm backdrop-blur;
+  }
+
+  .btn-primary {
+    @apply rounded-lg border border-accent bg-accent px-3 py-1.5 text-xs font-medium text-white transition hover:opacity-90;
+  }
+
+  .btn-secondary {
+    @apply rounded-lg border border-line bg-white px-3 py-1.5 text-xs font-medium text-ink transition hover:bg-mist;
+  }
+
+  .input-base {
+    @apply w-full rounded-lg border border-line bg-white px-3 py-2 text-sm outline-none transition focus:border-accent;
+  }
+}
